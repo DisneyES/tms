@@ -1,0 +1,269 @@
+#loginDiv{
+	background-color: #227E4B;
+	text-align:center;
+	width:200px;
+	margin:5%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:25px;
+}
+
+#centerArea{
+	background-color:white;
+	margin: 0 auto;
+	width:1000px;
+	height:auto;
+	font-size:17;
+	}
+
+#content {
+	/*background-color: #227E4B;*/
+	font-family:arial;
+	background-color: #279257;
+	margin-top: 20px;
+	width: 960px;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+#member{
+color:red;
+text-align:left;
+text-align:left;
+}
+
+h1{
+text-align: center
+}
+
+h2{
+text-align: left;
+background-color: #014421;
+/*background-color: #F3AA2C;
+background-color: #ffd700;*/
+}
+
+#searchDiv{
+margin-left:20%;
+}
+
+#pic{
+width: 250px;
+height: 200px;
+}
+
+h3{
+color:#014421;
+}
+
+p{
+text-align: left;
+color: black;
+}
+
+#about{
+text-align: center;
+}
+
+th{
+	text-align: center;
+	background-color: #e6e6fa;
+	color:#014421;
+	border: 1px solid black;
+}
+
+th.sortable{
+	cursor: pointer;
+}
+
+th.sortable:hover{
+	color: red;
+}
+
+td{
+/*color:#7b1113;*/
+color:black;
+font-size:16;}
+
+#result, #result td{
+border: 1px solid black;
+border-collapse: collapse;
+padding: 10px;
+}
+
+#image{
+height: 50px;
+width: 100px;
+}
+
+#count_results{
+border: solid black;
+border-collapse: collapse;
+margin: auto;
+}
+
+
+#options{
+	background-color:#014421;
+	background-image: url("../images/uplb.png");
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	width:100%;
+	height: 50px;
+}
+
+#heading{
+text-align:center;
+color: #ffffff;
+}
+
+#logo{
+float: left;
+height: 100%;
+top:0px;
+left:0px;
+background-color:#014421;
+}
+
+#upatrol{
+color:white;
+margin-left:3em;
+}
+
+#regPro{
+margin-left:3em;
+}
+
+
+#upatrol1{
+color:white;
+}
+
+ul {
+padding:0;
+margin:0;
+color: red;
+}
+
+input.text {
+	border:hidden; background-color:#014421; color:#ffffff
+	}
+input.radio{
+	color:#ffffff;
+	
+	}
+select{
+	align:center;  border:hidden;background-color:#014421; color:#ffffff
+	}	
+
+input.button{	
+	background-color:#014421;
+	text-align:center; 
+	color:#f3aa2c; 
+	border:0; 			
+	font-weight:800; font:'Arial'
+	}
+input.label{
+	color:#7b1113;
+	}
+
+
+#logoutLink{
+float:right;
+}
+
+p.successNotifier{
+color: red;
+text-align: left;
+}
+
+.fieldError{
+color: red;
+text-align: left;
+}
+
+#options a{
+	color: #FFF;
+	margin: 0 10px;
+}
+
+/* -- ADDED ----------------------------------------------------- */
+
+/* menu options */
+#options img{
+	float: left;
+}
+
+#options ul{
+	list-style: none outside none;
+	margin-left: 60px;
+}
+
+#options ul li{
+	float: left;
+	margin: 13px 2px;
+}
+
+#options a{
+	text-decoration: none;
+}
+
+/* header */
+div#header{
+	background: url("../images/header.jpg") no-repeat scroll 40px -120px transparent;
+	height: 270px;
+	margin-left:-40px;
+
+}
+
+/* search */
+#searchPanel{
+	border: 1px solid #000000;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+
+#searchPanel form {
+    margin: 0;
+}
+
+#searchFilter div:first-child{
+	margin-left: 70px;
+}
+
+#searchFilter .combine{
+	margin-right: 10px;
+	width: 60px;
+}
+
+#searchFilter .keyword:first-child{
+	margin-right: 6px;
+}
+
+#searchFilter .keyword{
+	margin-right: 10px;
+	width: 250px;
+}
+
+#searchFilter .filter{
+	margin-right: 10px;
+	width: 150px;
+}
+
+#searchPanel .searchButton{
+	height: 20px;
+    margin: 10px 0 0;
+}
+
+/* menu */
+.menuitem:hover{
+	/*color: #CCAC00 !important;*/
+	color: #F3AA2C !important;
+	}
+
+/* message */
+.message{
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid red;
+}
