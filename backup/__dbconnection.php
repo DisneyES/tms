@@ -6,11 +6,11 @@
 class dbconnection {
 
 	function connectdb() {
-		$con = mysql_connect("localhost","upfdb-user3", "p6QURqVqpyEPAXsw");//create connection to the database
+		$con = mysql_connect("localhost","root");//create connection to the database
 		if (!$con)
 			die('Could not connect: ' . mysql_error());
 			
-		mysql_select_db("upfdatabase", $con) or die("cannot connect to DB");//select database from user
+		mysql_select_db("UPFDatabase", $con);//select database from user
 		return $con;
 	}//connect to the database
 	
