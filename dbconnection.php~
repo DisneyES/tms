@@ -6,7 +6,7 @@
 class dbconnection {
 
 	function connectdb() {
-		$con = mysql_connect("localhost","upfdb-user3", "p6QURqVqpyEPAXsw");//create connection to the database
+		$con = mysql_connect("localhost","upfdb-user3", "p6QURqVqpyEPAXsw") or die("cannot connect");//create connection to the database
 		if (!$con)
 			die('Could not connect: ' . mysql_error());
 			
