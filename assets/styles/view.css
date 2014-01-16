@@ -1,7 +1,10 @@
 body {
   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
-  font-size: 11px;
   background-color: #eceff6;
+}
+
+p {
+  font-size: small;
 }
 
 #loginForm input {
@@ -91,9 +94,11 @@ color: black;
 }
 
 #about{
-  text-align: right;
-  font-size: x-small;
-  color: #555;
+  text-align: center;
+  font-size: small;
+  color: #888;
+  background: #eceff6;
+  margin-top: 25px;
 }
 
 th{
@@ -134,14 +139,6 @@ margin: auto;
 }
 
 
-#options{
-	background-color:#3b5998;
-	/*background-image: url("../images/uplb.png");*/
-	background-repeat: no-repeat;
-	background-position: 10px 5px;
-	width:100%;
-	height: 50px;
-}
 
 #heading{
 text-align:center;
@@ -213,6 +210,17 @@ color: red;
 text-align: left;
 }
 
+
+
+#options{
+	background-color:#3b5998;
+	/*background-image: url("../images/uplb.png");*/
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	width:100%;
+  height: 40px;
+}
+
 #options a{
 	color: #FFF;
 	margin: 0 10px;
@@ -230,9 +238,16 @@ text-align: left;
 	margin-left: 0px;
 }
 
+#options ul li:hover{
+  color: white;
+  background: #333333;
+}
+
 #options ul li{
-	float: left;
-	margin: 13px 2px;
+  float: left;
+  font-size: 15px;
+  height: 20px;
+  padding: 10px 0;
 }
 
 #options a{
@@ -288,9 +303,7 @@ div#header{/*
 
 /* menu */
 .menuitem:hover{
-	/*color: #CCAC00 !important;*/
-	color: #CCAC00 !important;
-	}
+}
 
 /* message */
 .message{

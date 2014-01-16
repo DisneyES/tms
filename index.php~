@@ -4,7 +4,7 @@
   -->
 <?php
 	$root = "./";
-	$pageTitle = "Login";
+	$pageTitle = "Home";
 	
 	session_start();
 	if(isset($_SESSION['username'])) header("Location: HomePage/");
@@ -40,10 +40,9 @@
 			<div id="welcome">
 				<h3>UPLB Traffic Management System</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia felis quis nisi imperdiet viverra. Maecenas at sapien pharetra, vehicula mi ac, blandit erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare enim ultrices, malesuada nibh ut, sollicitudin odio. In scelerisque feugiat risus vel feugiat. Proin eu auctor sem, sed pulvinar neque. Nulla convallis tincidunt posuere. Integer eleifend auctor euismod. Cras blandit non risus quis pretium. Vivamus consectetur lorem leo, at suscipit dui facilisis eget. Vivamus vel urna eget lacus porta interdum non non arcu. Vestibulum porta ac odio ac fermentum. Sed molestie sem ut odio interdum luctus. Proin rhoncus viverra urna. Ut et lobortis tortor, vel dignissim nisl. </p>
-		<div id='about'>&copy; 2013 by University of the Philippines Los Ba&ntilde;os.<br />All Rights Reserved.<br/>
-			</div>
-			<div class="clearboth"></div>
 		</div>
+			<div class="clearboth"></div>
+		<div id='about'>&nbsp;<br />&copy; 2013 by University of the Philippines Los Ba&ntilde;os.<br />All Rights Reserved.</div>
 		</div>
 	</body>
 </html>
