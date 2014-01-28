@@ -1,6 +1,65 @@
+/******************************/
+
+/* 
+RESET
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/******************************/
+
+
 body {
   font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
   background-color: #eceff6;
+  font-size: small;
+}
+
+a {
+  color: #3b5998;
 }
 
 p {
@@ -48,13 +107,12 @@ p {
 	margin: 0 auto;
 	width:1000px;
 	height:auto;
-	font-size:17;
 	}
 
 #content {
 	/*background-color: #227E4B;*/
 	background-color: #ffffff;
-	color: #333;
+	color: #333333;
 	margin: 20px;
 	width: 960px;
 	border: 0px solid transparent;
@@ -85,7 +143,7 @@ height: 200px;
 }
 
 h3{
-color:#014421;
+color:#3b5998;
 }
 
 p{
@@ -104,7 +162,7 @@ color: black;
 th{
 	text-align: center;
 	background-color: #e6e6fa;
-	color:#014421;
+	color:#3b5998;
 	border: 1px solid black;
 }
 
@@ -119,7 +177,7 @@ th.sortable:hover{
 td{
 /*color:#7b1113;*/
 color:black;
-font-size:16;}
+}
 
 #result, #result td{
 border: 1px solid black;
@@ -150,7 +208,7 @@ float: left;
 height: 100%;
 top:0px;
 left:0px;
-background-color:#014421;
+background-color:#3b5998;
 }
 
 #upatrol{
@@ -172,19 +230,10 @@ margin:0;
 color: red;
 }
 
-input.text {
-	border:hidden; background-color:#014421; color:#ffffff
-	}
-input.radio{
-	color:#ffffff;
-	
-	}
-select{
-	align:center;  border:hidden;background-color:#014421; color:#ffffff
-	}	
+
 
 input.button{	
-	background-color:#014421;
+	background-color:#3b5998;
 	text-align:center; 
 	color:#f3aa2c; 
 	border:0; 			
@@ -308,5 +357,6 @@ div#header{/*
 .message{
 	margin-bottom: 20px;
 	padding: 10px;
-	border: 1px solid red;
+	border: 1px solid #dd3c10;
+  background-color: #ffebe8;
 }
