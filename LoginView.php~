@@ -11,7 +11,7 @@ class LoginView
 {
 	function requestLogin(){
 		$username = $_POST['username'];
-		$password = $_POST['psswrd'];
+		$password = $_POST['password'];
 		
 		$loginview2 = new LoginView();
 		$loginview2->validateInfo($username,$password);
@@ -24,7 +24,7 @@ class LoginView
 		
 		$_SESSION['message'] = "";
 	
-		if($profile != 0){
+		if($profile == 0){
 			$_SESSION['invalidlogin'] = 1;
 			header("Location: ../UPF_Database/");
 		}else{ // correct login details

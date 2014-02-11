@@ -106,7 +106,7 @@ p {
 	background-color:white;
 	margin: 0 auto;
 	width:1000px;
-	height:auto;
+	padding-bottom: 30px;
 	}
 
 #content {
@@ -124,13 +124,40 @@ text-align:left;
 text-align:left;
 }
 
-h1{
-text-align: center
+h1 {
+	text-align: center;
+	font-size: xx-large;
+	line-height:2;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: top;
+	color:#3b5998;
 }
 
-h2{
-text-align: left;
-background-color: transparent;
+h2 {
+	text-align: center;
+	font-size: x-large;
+	line-height:2;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: top;
+	color:#3b5998;
+}
+
+h3 {
+	text-align: center;
+	font-size: large;
+	line-height:2;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: top;
+	color:#3b5998;
 }
 
 #searchDiv{
@@ -140,10 +167,6 @@ margin-left:20%;
 #pic{
 width: 250px;
 height: 200px;
-}
-
-h3{
-color:#3b5998;
 }
 
 p{
@@ -156,7 +179,7 @@ color: black;
   font-size: small;
   color: #888;
   background: #eceff6;
-  margin-top: 25px;
+/*   margin-top: 255px; */
 }
 
 th{
@@ -360,3 +383,33 @@ div#header{/*
 	border: 1px solid #dd3c10;
   background-color: #ffebe8;
 }
+
+
+/* user registration*/
+
+td.form_label_column {
+	text-align: right;
+	padding-right: 10px;
+	width: 150px;
+}
+
+table#registration_table {
+	margin: 30px 0 0 30px;
+}
+
+label.error {
+	color: red;
+	margin-left: 15px;
+}
+
+#reg_username, #reg_password, #reg_email, #confirm_password, #agree{
+	padding:3px;
+	font-size:18px;
+	border:3px #CCC solid;
+	margin: 5px;
+}
+
+#tick{display:none}
+#cross{display:none}
+#tick2{display:none}
+#cross2{display:none}

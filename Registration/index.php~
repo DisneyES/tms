@@ -4,7 +4,7 @@
   -->
 <?php
 	$root = "../"; // root folder
-	$pageTitle = "Update Profile";
+	$pageTitle = "Registration";
 	$currentMenu = "applicant";
 	
 	session_start();

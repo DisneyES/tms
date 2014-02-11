@@ -11,7 +11,7 @@ class LoginView
 {
 	function requestLogin(){
 		$username = $_POST['username'];
-		$password = $_POST['psswrd'];
+		$password = $_POST['password'];
 		
 		$loginview2 = new LoginView();
 		$loginview2->validateInfo($username,$password);
