@@ -3,7 +3,6 @@
 $root = "../"; // root folder
 $pageTitle = "Register";
 include "head.php";
-
 ?>
 <body id="newReg">
 

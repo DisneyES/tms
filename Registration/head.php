@@ -25,6 +25,9 @@
 		var wrong = "false";
 		
 		$(document).ready(function(){
+		
+			$("#update_form").validate();
+		
 			$("#user_registration_form").validate({
 				rules: {
 					reg_username: {

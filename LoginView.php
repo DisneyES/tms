@@ -47,7 +47,7 @@ class LoginView
 				$_SESSION['username'] = $username;
 				$_SESSION['profileType'] = strtoupper($profile['profileType']);
 				$_SESSION['profileStatus'] = strtoupper($profile['status']);
-				$_SESSION['profileID'] = $profile['pid'];
+				$_SESSION['profileID'] = $profile['profileID'];
 				$_SESSION['driverID'] = strtoupper($profile['driverID']);
 				
 				header("Location: HomePage/");

@@ -25,6 +25,9 @@
 		var wrong = "false";
 		
 		$(document).ready(function(){
+		
+			$("#update_form").validate();
+		
 			$("#user_registration_form").validate({
 				rules: {
 					reg_username: {
@@ -52,7 +55,7 @@
 					reg_username: {
 						required: "Enter a username",
 						minlength: "Username is too short",
-						remote: "Username already registered"
+						remote: "Username not available"
 					},
 					reg_password: {
 						required: "Provide a password",

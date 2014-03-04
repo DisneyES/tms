@@ -1,6 +1,6 @@
 <?php
 
-
+$url = "/UPF_Database/Registration/";  //Registration folder URL
 $root = "../"; // root folder
 
 include "../dbconnection.php";
@@ -11,13 +11,24 @@ $username = $_POST['reg_username'];
 $password = $_POST['reg_password'];
 $email = $_POST['reg_email'];
 
+function generateRandomString($length = 10) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, strlen($characters) - 1)];
+    }
+    return $randomString;
+}
+
 // phpinfo();
 
 echo "username: ".$username."<br />password: ".$password."<br />";
 
+// generate verification code
+$verificationCode = generateRandomString();
 
 //query string
-$sql = "INSERT INTO table_profile (userName, password, emailAddress) VALUES ('".$username."', '".$password."' ,'".$email."')";
+$sql = "INSERT INTO table_profile (userName, password, emailAddress, verification_code) VALUES ('".$username."', '".$password."' ,'".$email."', '".$verificationCode."')";
 
 //execute query or die
 if (!mysql_query($sql,$con)){
@@ -34,7 +45,11 @@ $from = "yo_ayco@yahoo.com";
 mail($email,$subject,$message,"From: $from\n") or die('Mail Error');
 */
 
+
+
+echo "<a href='".$url."verify_code.php?code=".$verificationCode."&username=".$username."'>".$verificationCode."</a>";
+
 // REDIRECT //not working
-header("Location: ".$root."?");
+// header("Location: ".$root."?status=emailsent");
 
 ?>

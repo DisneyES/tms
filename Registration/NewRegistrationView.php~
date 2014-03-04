@@ -288,7 +288,7 @@ class NewRegistrationView
 		$uname = $_POST['uname'];
 		$pword = $_POST['pword'];
 		$lname = $_POST['lname'];
-		$fname = $_POST['fname'];
+		$fname = $_POST['fname'];							
 		$mname = $_POST['mname'];
 		$contactno = $_POST['contactnumber'];
 		$gender = $_POST['gender'];
